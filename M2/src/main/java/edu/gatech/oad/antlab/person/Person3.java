@@ -44,8 +44,8 @@ public class Person3 {
 	private String calc(String input) {
             if(input != null && input.length() > 0) {
                 String forreturn = "";
-                for (int i = input.length() - 1; i >= 0; i++) {
-                    forreturn = forreturn.concat(input.substring(i, i+1));
+                for (int i = input.length() - 1; i >= 0; i--) {
+                    forreturn = forreturn.concat(input.substring(i, i + 1));
                 }
                 return forreturn;
             } else {
